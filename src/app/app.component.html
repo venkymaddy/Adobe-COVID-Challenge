@@ -1,0 +1,65 @@
+<div class="container">
+    
+    <div class="row header" style="background-color: aliceblue;">    
+        <!--  Logo of State of Hawai Top Left -->
+        <img src="/assets/images/logo.png" alt="" width="250px" class="alignImg">
+
+        <!-- Navigation bar Home, Content tab-->
+        <div style="margin-top: 20px;">
+            <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="navbar"
+                style="margin-left: 50px; margin-right: 25px; border-radius: 5px;"> Home </a>
+        </div>
+        <div>
+            <a routerLink="/content" routerLinkActive="active" class="navbar" style="border-radius: 5px;"> Content </a>
+        </div>
+        <div>
+            <a href="#contactUs" class="navbar" style="border-radius: 5px;"> Contact Us </a>
+        </div>
+    </div>
+    <!-- Horizontal line after Navigation bar -->
+    <div class="row header">
+        <hr style="border-bottom: 3px solid #d0142c; margin-top: 0px;">
+    </div>
+
+    <!-- Home and Content pages are rendered dynamically in this router outlet -->
+    <div class="row content">
+        <router-outlet></router-outlet>
+    </div>
+    
+    <!-- Footer of the page -->
+    <div class="row footer" id="contactUs">
+        <div class="row">   
+        <div class="col-xs-4 col-sm-4" style="padding: 5px 0 0 15px; color: white; text-decoration: underline;">
+            <h4 style="padding-left: 10px;"> Contact Us </h4>
+            <p class="contact"><span class="glyphicon glyphicon-phone"></span> +1 (808) 1800 123 </p>
+            <p class="contact"><span class="glyphicon glyphicon-envelope"></span> Email: info@stateofhawaii.com </p>
+        </div>     
+        <div class="col-xs-4 col-sm-4">
+            <p style="color: white; padding-top: 40px; font-size: 15px; padding-left: 10px;">
+                © 2020 State of Hawaii. All Rights Reserved
+            </p>
+        </div>
+
+        <!-- Provider link to navigate it to the respective social media page -->
+        <div class="col-xs-4  col-sm-4">
+            <ul>
+                <li class="social">
+                    <a href="">
+                        <img src="/assets/images/Facebook.png" alt="">
+                    </a>                
+                </li>            
+                <li class="social">
+                    <a href="">
+                        <img src="/assets/images/Instagram.png" alt="">
+                    </a>
+                </li>                
+                <li class="social">
+                    <a href="">
+                        <img src="/assets/images/Twitter.png" alt="">
+                    </a>                
+                </li>
+            </ul>
+        </div>
+        </div>        
+    </div>
+</div>

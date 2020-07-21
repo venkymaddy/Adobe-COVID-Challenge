@@ -1,0 +1,314 @@
+/*  Restricting the horizontal scroll of the page*/
+body {
+    overflow-x: hidden;
+}
+
+/* Common style */
+.bold {
+    font-weight: bold;
+    color: gray;
+}
+
+.padlf-padtp {
+    padding-left: 18px;
+    padding-top: 10px;
+    font-weight: bold;
+    color: gray;
+}
+
+.fsize {
+    font-size: 15px;
+}
+
+/* Setting the width and height of the PDF file */
+div#adobe-dc-view {
+    height: 80vh !important;
+}
+
+.content {
+    min-height: calc(90vh);
+    padding: 10px;
+}
+
+.pdf-view {
+    height: 75vh !important;
+}
+
+.alignImg {
+    float: left;
+    padding-left: 10px;
+}
+
+.container{
+    width: auto;
+}
+
+/* Home page message style */
+.padLeft{
+    padding: 20px;    
+    color: white;    
+    font-size: 1.5em;        
+}
+
+/*  Home and Content tab button style in Home page*/
+.header {
+    width: 100vw;
+}
+
+.navbar {
+    padding: 0 40px 0 40px;    
+    padding-top: 1%;
+    float: left;
+    text-decoration: none;
+}
+
+/*  PDF file link styles in home page */
+.example-header-image {
+    background-image: url('/assets/images/pdf.png');
+    background-size: cover;
+}
+
+.mat-card-avatar {
+    height: 49px !important;    
+}
+
+mat-card.card {
+      opacity: 1;
+}
+
+.padTop{
+    padding-top: 10px;
+    float: right;    
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: none;
+    background-color: lightblue;
+}
+
+.active {
+    background-color: #cce6ff;
+    border-bottom: 3px solid #00237d;
+    color: #00237d;
+}
+
+
+li.nav {
+    list-style-type: none;
+    float: left;
+    padding: 5px;
+}
+
+.link li:before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background-image: url('/assets/images/pdf.png');
+    background-size: cover;
+    background-position: center;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*  Footer of the page Style */
+.footer{
+    width: 100vw;
+    height: 100px;
+    background-color: #d0142c;
+    bottom: 0px;
+    opacity: 0.8;
+}
+
+.social {
+    float: left;
+    list-style-type: none;
+    padding-top: 35px;
+    padding-left: 25px;
+}
+
+.contact {
+    color: white;
+    padding: 2px 0 0 10px;
+    float: left;
+}
+/*  User details entry form style */
+.btnStyle {
+    background-color: #00237d;
+    color: white;
+}
+
+mat-form-field {
+    color: black;
+}
+
+.mat-raised-button[disabled]:not([class*=mat-elevation-z]) {
+    color: black;
+}
+
+/* Overall html body background style */
+body {        
+    background: linear-gradient(to right,rgba(0,0,0,.9),rgba(0,0,0,0)),url('/assets/images/human.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*  Content page embedded mode style */
+.embed {
+    text-align: center; 
+    color: gray; 
+    background-color: whitesmoke; 
+    font-weight: bold;
+}
+
+/*  Content page PDF viewer style */
+.content-row {
+    background-color: gray; 
+    padding: 15px; 
+    padding-bottom: 40px;
+}
+
+/*  Brief info about PDF style */
+.summary{
+    color: white; 
+    padding-left: 15px; 
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+p.summary {
+    font-size: 1.25em;
+}
+
+/* Carousel effects and Carousel control position */
+.carousel {
+    padding-left: 50px;
+    width: 1100px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.carousel-indicators li {
+    padding-left: 30px;
+    margin-right: 5px;
+}
+
+.item { 
+    background-color: #cce6ff;    
+    text-align: center; 
+}
+
+.carousel-control .glyphicon-chevron-left {
+    margin-left: 10px;
+} 
+
+.carousel-control .glyphicon-chevron-right {
+    margin-right: -20px;
+}
+
+.carousel-indicators .active {
+    background-color: black;
+}
+
+.carousel-indicators li {
+    border: 1px solid #d0142c;
+}
+
+.carousel-control.left {
+    margin-left: 50px;
+}
+
+p.slide1{
+    font-size: 70px; padding-top: 40px; color: black !important;
+}
+
+p.slide3 {
+    font-size: 60px; padding-top: 40px; color: black !important;
+}
+
+/* Responsive Design w.r.t each device Media Queries*/
+@media only screen and (min-width: 1200px) {
+    .carousel {
+        padding-left: 50px;
+        width: 900px;
+        height: 335px;
+        overflow: hidden;
+    }
+    .item{
+        height: 340px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .carousel {
+        padding-left: 50px;
+        width: 700px;
+        height: 335px;
+        overflow: hidden;
+    }
+
+    .item{
+        height: 340px;
+    }
+    .navbar {
+        padding-top: 1%;
+        float: left;
+        text-decoration: none;
+    }
+
+    p.slide1{
+        font-size: 50px; padding-top: 40px; color: black !important;
+    }
+    
+    p.slide3 {
+        font-size: 50px; padding-top: 40px; color: black !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    
+    .carousel {
+        padding-left: 50px;
+        width: 600px;
+        height: 245px;
+        overflow: hidden;
+    }
+    .item{
+        height: 250px;
+    }
+    .carousel-control {
+        left: 50px;
+    }
+
+    .navbar {        
+        padding: 0 20px 0 20px;
+    }
+
+    a.navbar{
+        padding-top: 12px;
+    }
+
+    .padTop{
+        padding-top: 10px;
+        float: left;    
+    }
+
+    p.slide1{
+        font-size: 40px; padding-top: 40px; color: black !important;
+    }
+    
+    p.slide3 {
+        font-size: 30px; padding-top: 40px; color: black !important;
+    }
+
+    .carousel-control.left {
+        margin-left: 0px;
+    }
+}
