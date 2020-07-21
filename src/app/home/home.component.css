@@ -1,0 +1,25 @@
+/*  Removed the  Bulletin */
+li {
+    list-style-type: none;
+    font-weight: bold;   
+    padding: 10px; 
+}
+
+/* Hover effect on hovering on the list */
+li a:hover{
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/*  Anchor tag style */
+a {
+    text-decoration: underline;
+    color:#d0142c;
+}
+
+/*  Paragraph text color */
+p {
+    color: white;
+}
+

@@ -1,0 +1,146 @@
+<div class="container">  
+  <div class="row">    
+    <div class="col-sm-12 col-md-6 col-lg-8">
+      <!-- Carousel slides  -->
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+    
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">          
+          <p class="slide1">
+            Welcome to the Portal on State of Hawaii
+          </p>
+        </div>
+
+        <div class="item">
+          <a href="" class="slide1">
+            <img src="assets/images/flower.webp" alt="">
+          </a>
+        </div>    
+    
+        <div class="item">
+          <p class="slide3">
+            Submit your Claim Today..! Get Ready for the New Opportunity..!
+          </p>
+        </div>
+      </div>
+    
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div> 
+
+      <!-- Information about the page to Users -->
+      <p class="padLeft">       
+        The world is facing the COVI19 pandemic which is the major crisis and it had lead to lot of undemployment all over world. 
+        <br>
+        <br>
+        In this scenario lot of people in Hawaii is facing unemployment and lot of applications were received. 
+        <br>
+        <br>
+        In order to ease the people this site enables people to get the knowledge as how to submit the claim.
+        <br>   
+      </p>  
+      <p class="padLeft" style="color: #d0142c;"> 
+        Please click on the link to know more... </p>
+    </div>
+
+    <!-- Embedded PDF View Links -->
+    <div class="col-sm-12 col-md-6 col-lg-4">            
+        <div class="row">
+          <div class="col-sm-12">
+            <h3 style="color: white; font-weight: bold;"> Useful Links </h3>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12 padTop">
+          <mat-card class="card">
+            <mat-card-header>
+              <mat-icon></mat-icon>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title> State of Hawaii Guide </mat-card-title>
+            </mat-card-header>
+            <mat-card-content style="padding-left: 60px;">
+              <a [routerLink]="['/content']" [queryParams]="{'filePath': 'State of Hawaii Guide'}"> 
+                State of Hawaii Guide 
+              </a>
+            </mat-card-content>
+          </mat-card>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12 padTop">
+            <mat-card class="card">
+              <mat-card-header>
+                <mat-icon></mat-icon>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title> Document Guide 1</mat-card-title>
+              </mat-card-header>
+              <mat-card-content style="padding-left: 60px;">
+                <a [routerLink]="['/content']" [queryParams]="{'filePath': 'combineFilesInput1'}"> Document 1 </a>
+              </mat-card-content>
+            </mat-card>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-xs-12 padTop">
+            <mat-card class="card">
+              <mat-card-header>
+                <mat-icon></mat-icon>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title> Document Guide 2 </mat-card-title>
+              </mat-card-header>
+              <mat-card-content style="padding-left: 60px;">
+                <a [routerLink]="['/content']" [queryParams]="{'filePath': 'Bodea Brochure'}"> Document 2 </a>
+              </mat-card-content>
+            </mat-card>
+          </div>
+        </div>
+          
+        <div class="row">
+          <div class="col-xs-12 padTop">
+            <mat-card class="card">
+              <mat-card-header>
+                <mat-icon></mat-icon>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title> Document Guide 3 </mat-card-title>
+              </mat-card-header>
+              <mat-card-content style="padding-left: 60px;">
+                <a [routerLink]="['/content']" [queryParams]="{'filePath': 'Computers'}"> Document 3 </a>
+              </mat-card-content>
+            </mat-card>
+          </div>    
+        </div>
+      
+        <div class="row">
+          <div class="col-xs-12 padTop">
+            <mat-card class="card">
+              <mat-card-header>
+                <mat-icon></mat-icon>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title> Document Guide 4 </mat-card-title>
+              </mat-card-header>
+              <mat-card-content style="padding-left: 60px;">
+                <a [routerLink]="['/content']" [queryParams]="{'filePath': 'Photography'}"> Document 4 </a>
+              </mat-card-content>
+            </mat-card>
+          </div>  
+        </div>
+    </div>
+  </div>
+</div>
